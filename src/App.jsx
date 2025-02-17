@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Dashboard from "./components/Dashboard"; // Import the Dashboard component
+import Dashboard from "./components/Dashboard";
+import Profile from "./components/Profile"; // Import Profile component
 
 const App = () => {
   return (
@@ -34,8 +35,9 @@ const App = () => {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/dashboard" element={<Dashboard />} />{" "}
-        {/* Add the Dashboard route */}
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />{" "}
+        {/* Profile page route */}
       </Routes>
     </Router>
   );
